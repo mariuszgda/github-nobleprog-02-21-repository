@@ -10,7 +10,12 @@ provider "aws" {
 # random suffix
 
 resource "random_string" "suffix" {
-  length = 4
+  length  = 4
+  special = false
+  lower   = true
+  number  = false
+  upper   = false
+  # only letters and only small ones
 }
 
 resource "aws_vpc" "vpc" {

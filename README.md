@@ -6,7 +6,7 @@ See page 34
 
 ```bash
 terraform apply -var-file=dev.tfvars
-terraform apply -var-file=prod.tfvars
+terraform apply -var-file=prod.tfvars # THIS IS WRONG
 ```
 
 ## Info
